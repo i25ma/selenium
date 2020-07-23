@@ -30,3 +30,13 @@ Process finished with exit code 1
 `
 
 - A1: 暂时解决办法就是把webdriver 的文件移动到了python的安装目录下就没问题了。
+
+#### Q2 使用find_element_by_tag_name('input')的时候可以找到，但是后面加上[0] 索引0 查找第一个就提示如下:
+```
+Traceback (most recent call last):
+  File "D:/workspace/selenium/demo02.py", line 53, in <module>
+    case.test_tag()
+  File "D:/workspace/selenium/demo02.py", line 37, in test_tag
+    input = self.driver.find_element_by_tag_name('input')[0]
+TypeError: 'WebElement' object is not subscriptable
+```
